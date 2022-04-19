@@ -5,37 +5,37 @@ const categories = [
       id: 1,
       title: 'FilmPod',
       imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-      // route: 'shop/hats'
+      route: '/filmpod'
     },
     {
       id: 2,
       title: 'Copson Studio Wiring',
       imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-      // route: 'shop/jackets'
+      route: '/copson-studio-wiring'
     },
     {
       id: 3,
       title: 'Owen Baldwin - Film Composer',
       imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-      // route: 'shop/sneakers'
+      route: '/owen-baldwin'
     },
     {
       id: 4,
       title: 'Watchlist',
       imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      // route: 'shop/womens'
+      route: '/watchlist'
     },
     {
       id: 5,
       title: 'Demo React Shop',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      // route: 'shop/mens'
+      route: 'demo-react-shop'
     },
     {
       id: 6,
       title: 'IsleBnB',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      // route: 'shop/mens'
+      route: '/islebnb'
     },
   ];
 
