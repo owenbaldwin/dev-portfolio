@@ -47,7 +47,7 @@ const Directory = () => {
         <DirectoryItem key={category.id} category={category} />
       ))}
     </div>
-  )
+  );
 
 };
 
