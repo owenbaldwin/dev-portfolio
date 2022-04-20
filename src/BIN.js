@@ -33,3 +33,7 @@
         id: 20,
         imageUrl: 'CSW image 2 goes here',
       },
+
+
+
+              <div className='background-image' style={{backgroundImage: `url(${object.items[2].imageUrl})`}}/>
