@@ -11,7 +11,7 @@ const categories = [
       id: 2,
       title: 'Copson Studio Wiring',
       imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-      route: '/copson-studio-wiring'
+      route: '/copsonstudiowiring'
     },
     {
       id: 3,
