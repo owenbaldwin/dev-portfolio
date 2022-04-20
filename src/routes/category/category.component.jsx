@@ -61,6 +61,11 @@ const Category = () => {
                 <h5>Description</h5>
                 <p>{object.items[0].presentation}</p>
               </div>
+              <div>
+                <p>{object.items[1].extlink}</p>
+                <img src={object.items[2].imageUrl} alt="filmpod-homepage" border="0" />
+              </div>
+
             </div>
           )
         }
