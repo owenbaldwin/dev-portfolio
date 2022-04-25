@@ -12,14 +12,14 @@ const DirectoryItem = ({category}) => {
 
   return (
     <div onClick={onNavigateHandler} className="directory-item-container">
-      <div>
-        <h4>image goes here</h4>
-      </div>
-      <div>
-        <h3>{title}</h3>
+      <div className='directory-item-bg-img' style={{backgroundImage: `url(${imageUrl})`}}>
+        <div className='directory-item-cover'>
+        </div>
       </div>
     </div>
   )
 };
 
 export default DirectoryItem;
+
+// <h3>{title}</h3>
