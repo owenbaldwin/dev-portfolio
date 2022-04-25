@@ -4,7 +4,7 @@ import { useContext, useState, useEffect } from 'react';
 
 import './category.styles.scss'
 
-
+// capitalize category titles without screwing up urls
 
 const Category = () => {
   const { category } = useParams();
@@ -20,7 +20,7 @@ const Category = () => {
         if (object.title === category) {
           return (
             // div with website's object id as key
-            <div key={object.id}>
+            <div className='category-content' key={object.id}>
               <div className='category-title' key={object.title.id}>
                 <h1>{object.title}</h1>
               </div>
@@ -40,8 +40,9 @@ const Category = () => {
                 {/*iteration through 'images' to display images and image descriptions*/}
                 {object.items[3].images.map((imageObject) => {
                   return (
-                    <div className='category-photo' key={imageObject.id}>
-                      <img src={imageObject.imageUrl} alt="portfolio images" border="0" />
+                    <div className='category-photo-div' key={imageObject.id}>
+                    {/*create new component for each photo to reuse same code as directory item?*/}
+                      <img className='category-photo' src={imageObject.imageUrl} alt="portfolio images" border="0" />
                       <p>{imageObject.imageDescription}</p>
                     </div>
                   )
