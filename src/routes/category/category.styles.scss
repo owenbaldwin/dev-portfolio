@@ -1,0 +1,90 @@
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-title {
+  display: flex;
+  justify-content: c;
+  h1 {
+    font-family: 'Italiana',
+    serif;
+    font-size: 70px;
+    font-weight: 100;
+    background-image: linear-gradient(135deg,
+      #DDBC9C 50%,
+      #C19D62 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 12px;
+    text-shadow: 10px 10px 10px black;
+  }
+}
+
+
+.category-description {
+  text-align: justify;
+  h5 {
+    font-family: 'Italiana',
+    serif;
+    font-size: 30px;
+    font-weight: 100;
+    background-image: linear-gradient(135deg,
+      #DDBC9C 50%,
+      #C19D62 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 12px;
+    text-shadow: 10px 10px 10px black;
+  }
+  p {
+    color: white;
+  }
+}
+
+.category-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  p {
+    font-family: 'Italiana',
+    serif;
+    font-size: 20px;
+    font-weight: 100;
+    background-image: linear-gradient(135deg,
+      #DDBC9C 50%,
+      #C19D62 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 10px 10px 10px black;
+  }
+}
+
+.category-photo-container {
+  width: 100%;
+}
+
+.category-photo-div {
+    margin-bottom: 34px;
+  p {
+    color: white;
+  }
+}
+
+.category-photo {
+  width: 100%;
+  object-fit: contain;
+  background: linear-gradient(#212121, #212121) padding-box,
+  linear-gradient(135deg, #DDBC9C, #E19B6A) border-box;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  box-shadow: 10px 10px 40px black;
+}

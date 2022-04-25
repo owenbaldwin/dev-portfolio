@@ -5,7 +5,7 @@ const PORTFOLIO_DATA = [
     items: [
       {
         id: 11,
-        presentation: 'App for film prods',
+        presentation: "Making a film is a long process, which will generally span over 2 to 3 years and involve from a couple to hundreds of crew members. FilmPod is a web app that allows film productions to manage and keep track of the infinite number of tasks. Crew members submit the work up the hierarchy when sent a task, which if approved by the direction will be posted onto a department moodboard. This allows the whole team to see the evolution of the project in real time so that everyone is on the same page and can understand the director's vision. This is even more useful during periods of lockdown when everyone works remotely and communication is harder.",
       },
       {
         id: 12,
