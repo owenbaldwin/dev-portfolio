@@ -2,44 +2,9 @@ import PORTFOLIO_DATA from '../../portfolio-data.js'
 import { useParams } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 
-const categories = [
-    {
-      id: 1,
-      title: 'FilmPod',
-      imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-      route: 'filmpod'
-    },
-    {
-      id: 2,
-      title: 'Copson Studio Wiring',
-      imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-      route: '/copsonstudiowiring'
-    },
-    {
-      id: 3,
-      title: 'Owen Baldwin - Film Composer',
-      imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-      route: '/owen-baldwin'
-    },
-    {
-      id: 4,
-      title: 'Watchlist',
-      imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-      route: '/watchlist'
-    },
-    {
-      id: 5,
-      title: 'Demo React Shop',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      route: 'demo-react-shop'
-    },
-    {
-      id: 6,
-      title: 'IsleBnB',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-      route: '/islebnb'
-    },
-  ];
+import './category.styles.scss'
+
+
 
 const Category = () => {
   const { category } = useParams();
@@ -50,20 +15,37 @@ const Category = () => {
   console.log('hello');
 
   return (
-    <div>
+    <div className='category-container'>
       {PORTFOLIO_DATA.map((object) => {
         if (object.title === category) {
           return (
             // div with website's object id as key
             <div key={object.id}>
+              <div className='category-title' key={object.title.id}>
+                <h1>{object.title}</h1>
+              </div>
+
               {/*div with item's object id as key*/}
-              <div key={object.items[0].id}>
+              <div className='category-description' key={object.items[0].id}>
                 <h5>Description</h5>
                 <p>{object.items[0].presentation}</p>
               </div>
-              <div>
-                <p>{object.items[1].extlink}</p>
-                <img src={object.items[2].imageUrl} alt="filmpod-homepage" border="0" />
+
+              <div className='category-links' key={object.items[1].id}>
+                <p>{object.items[1].wblink}</p>
+                <p>{object.items[2].ghlink}</p>
+              </div>
+
+              <div className='category-photo-container'>
+                {/*iteration through 'images' to display images and image descriptions*/}
+                {object.items[3].images.map((imageObject) => {
+                  return (
+                    <div className='category-photo' key={imageObject.id}>
+                      <img src={imageObject.imageUrl} alt="portfolio images" border="0" />
+                      <p>{imageObject.imageDescription}</p>
+                    </div>
+                  )
+                })}
               </div>
 
             </div>
@@ -77,6 +59,3 @@ const Category = () => {
 };
 
 export default Category;
-
-
-// go through json file and display only stuff under the right object title ie filmpod for filmpod only
