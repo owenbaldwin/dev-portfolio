@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import Footer from '../../components/footer/footer.component';
 import './navigation.styles.scss';
 
 const Navigation = () => {
@@ -18,6 +19,7 @@ const Navigation = () => {
         </div>
       </div>
       <Outlet />
+      <Footer />
     </div>
   )
 };
