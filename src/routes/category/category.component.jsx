@@ -33,6 +33,11 @@ const Category = () => {
                 <p>{object.items[0].presentation}</p>
               </div>
 
+              <div className='category-description' key={object.items[1].id}>
+                <h5>Technologies used</h5>
+                <p>{object.items[1].tech}</p>
+              </div>
+
               <div className='category-links' key={object.items[2].id}>
                 <p>{object.items[2].wblink}</p>
                 <p>{object.items[3].ghlink}</p>
