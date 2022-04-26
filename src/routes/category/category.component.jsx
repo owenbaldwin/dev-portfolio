@@ -22,7 +22,9 @@ const Category = () => {
             // div with website's object id as key
             <div className='category-content' key={object.id}>
               <div className='category-title' key={object.title.id}>
+                <div className="separator" />
                 <h1>{object.title}</h1>
+                <div className="separator" />
               </div>
 
               {/*div with item's object id as key*/}
@@ -31,14 +33,14 @@ const Category = () => {
                 <p>{object.items[0].presentation}</p>
               </div>
 
-              <div className='category-links' key={object.items[1].id}>
-                <p>{object.items[1].wblink}</p>
-                <p>{object.items[2].ghlink}</p>
+              <div className='category-links' key={object.items[2].id}>
+                <p>{object.items[2].wblink}</p>
+                <p>{object.items[3].ghlink}</p>
               </div>
 
               <div className='category-photo-container'>
                 {/*iteration through 'images' to display images and image descriptions*/}
-                {object.items[3].images.map((imageObject) => {
+                {object.items[4].images.map((imageObject) => {
                   return (
                     <div className='category-photo-div' key={imageObject.id}>
                     {/*create new component for each photo to reuse same code as directory item?*/}
