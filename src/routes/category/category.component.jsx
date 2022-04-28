@@ -29,18 +29,18 @@ const Category = () => {
 
               {/*div with item's object id as key*/}
               <div className='category-description' key={object.items[0].id}>
-                <h5>Description</h5>
+                <h5>DESCRIPTION</h5>
                 <p>{object.items[0].presentation}</p>
               </div>
 
               <div className='category-description' key={object.items[1].id}>
-                <h5>Technologies used</h5>
+                <h5>TECHNOLOGIES USED</h5>
                 <p>{object.items[1].tech}</p>
               </div>
 
               <div className='category-links' key={object.items[2].id}>
-                <p>{object.items[2].wblink}</p>
-                <p>{object.items[3].ghlink}</p>
+                <a href={object.items[2].wblink} target="_blank">Visit {object.title}</a>
+                <a href={object.items[3].ghlink} target="_blank">GitHub Repo</a>
               </div>
 
               <div className='category-photo-container'>
