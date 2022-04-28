@@ -1,7 +1,7 @@
 const PORTFOLIO_DATA = [
   {
     id: 1,
-    title: 'filmpod',
+    title: 'FilmPod',
     items: [
       {
         id: 11,
@@ -63,7 +63,7 @@ const PORTFOLIO_DATA = [
   },
   {
     id: 2,
-    title: 'copsonstudiowiring',
+    title: 'Copson Studio Wiring',
     items: [
       {
         id: 23,
@@ -105,7 +105,7 @@ const PORTFOLIO_DATA = [
   },
   {
     id: 3,
-    title: 'owen-baldwin',
+    title: 'Music Portfolio',
     items: [
       {
         id: 31,
@@ -147,7 +147,7 @@ const PORTFOLIO_DATA = [
   },
   {
     id: 4,
-    title: 'watchlist',
+    title: 'Watchlist',
     items: [
       {
         id: 39,
@@ -184,7 +184,7 @@ const PORTFOLIO_DATA = [
   },
   {
     id: 5,
-    title: 'demo-react-shop',
+    title: 'Demo React Store',
     items: [
       {
         id: 46,
@@ -231,7 +231,7 @@ const PORTFOLIO_DATA = [
   },
   {
     id: 6,
-    title: 'islebnb',
+    title: 'IsleBnB',
     items: [
       {
         id: 55,
