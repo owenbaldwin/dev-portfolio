@@ -13,11 +13,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 13,
-        wblink: 'filmpod Site link goes here',
+        wblink: 'http://www.filmpod.net',
       },
       {
         id: 14,
-        ghlink: 'GH repo link goes here',
+        ghlink: 'https://github.com/owenbaldwin/filmpod',
       },
       {
         id: 15,
@@ -75,11 +75,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 25,
-        wblink: 'CSW Site link goes here.',
+        wblink: 'https://www.copsonstudiowiring.co.uk',
       },
       {
         id: 26,
-        ghlink: 'GH repo link goes here.',
+        ghlink: 'https://github.com/owenbaldwin/-seanwebsite',
       },
       {
         id: 27,
@@ -117,11 +117,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 33,
-        wblink: 'OB Site link goes here',
+        wblink: 'https://www.owenabaldwin.com',
       },
       {
         id: 34,
-        ghlink: 'GH repo link goes here',
+        ghlink: 'https://github.com/owenbaldwin/personal_freelance_music_website',
       },
       {
         id: 35,
@@ -159,11 +159,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 41,
-        wblink: 'WL Site link goes here',
+        wblink: 'https://googie-watchlist.herokuapp.com',
       },
       {
         id: 42,
-        ghlink: 'GH repo link goes here',
+        ghlink: 'https://github.com/owenbaldwin/new-rails-watch-list',
       },
       {
         id: 43,
@@ -196,11 +196,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 48,
-        wblink: 'DRS Site link goes here',
+        wblink: 'https://demo-react-eshop-169647.netlify.app',
       },
       {
         id: 49,
-        ghlink: 'GH repo link goes here',
+        ghlink: 'https://github.com/owenbaldwin/Demo-React-eshop',
       },
       {
         id: 50,
@@ -243,11 +243,11 @@ const PORTFOLIO_DATA = [
       },
       {
         id: 57,
-        wblink: 'ib Site link goes here',
+        wblink: 'https://airbnb-owenbaldwin.herokuapp.com',
       },
       {
         id: 58,
-        ghlink: 'GH repo link goes here',
+        ghlink: 'https://github.com/owenbaldwin/islebnb',
       },
       {
         id: 59,
