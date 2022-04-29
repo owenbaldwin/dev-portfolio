@@ -1,4 +1,5 @@
 import DirectoryItem from "../directory-item/directory-item.component";
+import PageTitle from "../page-title/page-title.component";
 import './directory.styles.scss';
 
 const categories = [
@@ -44,14 +45,12 @@ const categories = [
 const Directory = () => {
   return (
     <div className="directory-container">
-      <div className="directory-title">
-        <div className="separator" />
-        <h2>Portfolio</h2>
-        <div className="separator" />
+      <div className="directory-content">
+        <PageTitle title="Portfolio"/>
+        {categories.map((category) => (
+          <DirectoryItem key={category.id} category={category} />
+        ))}
       </div>
-      {categories.map((category) => (
-        <DirectoryItem key={category.id} category={category} />
-      ))}
     </div>
   );
 
