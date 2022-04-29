@@ -1,0 +1,32 @@
+.page-title-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+
+  .separator {
+    height: 1px;
+    width: 100%;
+    border: 0px solid transparent;
+    background-image: linear-gradient(135deg,
+        #DDBC9C 50%,
+        #C19D62 90%);
+    box-shadow: 12px 12px 12px black;
+  }
+
+  h2 {
+    font-family: 'Italiana',
+      serif;
+    font-size: 50px;
+    font-weight: 100;
+    background-image: linear-gradient(135deg,
+        #DDBC9C 50%,
+        #C19D62 90%);
+    color: transparent;
+    -webkit-background-clip: text;
+    letter-spacing: 12px;
+    text-shadow: 10px 10px 10px black;
+    padding: 0px 48px;
+  }
+}

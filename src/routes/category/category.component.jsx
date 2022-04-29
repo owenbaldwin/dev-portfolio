@@ -1,6 +1,7 @@
 import PORTFOLIO_DATA from '../../portfolio-data.js'
 import { useParams } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
+import PageTitle from '../../components/page-title/page-title.component.jsx';
 
 import './category.styles.scss'
 
@@ -21,11 +22,7 @@ const Category = () => {
           return (
             // div with website's object id as key
             <div className='category-content' key={object.id}>
-              <div className='category-title' key={object.title.id}>
-                <div className="separator" />
-                <h1>{object.title}</h1>
-                <div className="separator" />
-              </div>
+              <PageTitle title={object.title} />
 
               {/*div with item's object id as key*/}
               <div className='category-description' key={object.items[0].id}>
