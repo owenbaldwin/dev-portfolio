@@ -19,6 +19,7 @@
 }
 
 .nav-left {
+  text-decoration: none;
   h1 {
     margin: 0;
     // color: white;
@@ -31,18 +32,33 @@
     color: transparent;
     -webkit-background-clip:text;
   }
+  h1:hover {
+    background-image: linear-gradient(135deg,
+        #dbcdbf 50%,
+        #c0aa87 90%);
+  }
 }
 
 .nav-right {
-      margin: 0;
-      // color: white;
-      font-family: 'Italiana',
-      serif;
-      font-size: 20px;
-      font-weight: 400;
-      background-image: linear-gradient(135deg,
-        #DDBC9C 50%,
-        #C19D62 90%);
-      color: transparent;
-      -webkit-background-clip:text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  a {
+    margin: 8px 0px;
+    font-family: 'Italiana',
+    serif;
+    font-size: 30px;
+    font-weight: 400;
+    background-image: linear-gradient(135deg,
+      #DDBC9C 50%,
+      #C19D62 90%);
+    color: transparent;
+    -webkit-background-clip:text;
+  }
+  a:hover {
+    background-image: linear-gradient(135deg,
+        #dbcdbf 50%,
+        #c0aa87 90%);
+  }
 }
