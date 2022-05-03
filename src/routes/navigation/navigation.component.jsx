@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 import Footer from '../../components/footer/footer.component';
 import './navigation.styles.scss';
 
@@ -7,14 +7,14 @@ const Navigation = () => {
     <div className='navigation-container'>
       <div className='navbar-container'>
         <div className='navbar-inner'>
-          <div className='nav-left'>
+          <Link to='/' className='nav-left'>
             <h1>Owen</h1>
             <h1>Baldwin</h1>
-          </div>
+          </Link>
           <div className='nav-right'>
-            <h3>Home</h3>
-            <h3>About</h3>
-            <h3>Contact</h3>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/contact'>Contact</Link>
           </div>
         </div>
       </div>
