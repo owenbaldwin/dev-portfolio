@@ -2,10 +2,9 @@ import PORTFOLIO_DATA from '../../portfolio-data.js'
 import { useParams } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 import PageTitle from '../../components/page-title/page-title.component.jsx';
-
+import YoutubeEmbed from '../../components/video/video.component.jsx';
 import './category.styles.scss'
 
-// capitalize category titles without screwing up urls
 
 const Category = () => {
   const { category } = useParams();
@@ -53,6 +52,16 @@ const Category = () => {
                 })}
               </div>
 
+              {(() => {
+                if (object.items[5].video) {
+                  return (
+                  <div className='category-video-container'>
+                    <h5>Video presentation</h5>
+                    <YoutubeEmbed embedUrl={object.items[5].video} />
+                  </div>
+                  )
+                }
+              })()}
             </div>
           )
         }
