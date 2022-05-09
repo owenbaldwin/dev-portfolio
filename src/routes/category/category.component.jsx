@@ -1,6 +1,6 @@
 import PORTFOLIO_DATA from '../../portfolio-data.js'
 import { useParams } from 'react-router-dom';
-import { useContext, useState, useEffect } from 'react';
+// import { useContext, useState, useEffect } from 'react';
 import PageTitle from '../../components/page-title/page-title.component.jsx';
 import YoutubeEmbed from '../../components/video/video.component.jsx';
 import './category.styles.scss'
@@ -8,7 +8,7 @@ import './category.styles.scss'
 
 const Category = () => {
   const { category } = useParams();
-  const [content, setContent] = useState(PORTFOLIO_DATA[category]);
+  // const [content, setContent] = useState(PORTFOLIO_DATA[category]);
 
   console.log('hello');
   console.log(PORTFOLIO_DATA);
@@ -27,6 +27,15 @@ const Category = () => {
               <div className='category-description' key={object.items[0].id}>
                 <h5>DESCRIPTION</h5>
                 <p>{object.items[0].presentation}</p>
+
+                {(() => {
+                  if (object.items[5].video) {
+                    return (
+                    <p>Video presentation available at the bottom of the page!</p>
+                    )
+                  }
+                })()}
+
               </div>
 
               <div className='category-description' key={object.items[1].id}>
