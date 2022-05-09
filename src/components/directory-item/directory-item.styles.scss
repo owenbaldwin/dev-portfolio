@@ -1,3 +1,8 @@
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 920px;
+$phone: 480px;
+
 .directory-item-container {
   // background-color: blue;
   height: 650px;
@@ -49,3 +54,14 @@
 }
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+@media screen and (max-width: $tablet) {
+  .directory-item-container {
+    height: 150px;
+  }
+
+  .directory-item-bg-img {
+    filter: grayscale(30%);
+  }
+}

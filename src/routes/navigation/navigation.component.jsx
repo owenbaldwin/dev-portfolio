@@ -1,5 +1,6 @@
 import { Outlet, Link } from 'react-router-dom';
 import Footer from '../../components/footer/footer.component';
+import Hamburger from '../../components/hamburger/hamburger.component';
 import './navigation.styles.scss';
 
 const Navigation = () => {
@@ -11,11 +12,7 @@ const Navigation = () => {
             <h1>Owen</h1>
             <h1>Baldwin</h1>
           </Link>
-          <div className='nav-right'>
-            <Link to='/'>Home</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
-          </div>
+          <Hamburger />
         </div>
       </div>
       <Outlet />
