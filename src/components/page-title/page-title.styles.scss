@@ -1,3 +1,8 @@
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 920px;
+$phone: 480px;
+
 .page-title-container {
   display: flex;
   justify-content: space-around;
@@ -27,6 +32,14 @@
     -webkit-background-clip: text;
     letter-spacing: 12px;
     text-shadow: 10px 10px 10px black;
-    padding: 0px 48px;
+  }
+}
+
+
+@media screen and (min-width: $laptop) {
+  .page-title-container {
+    h2 {
+      padding: 0px 48px;
+    }
   }
 }

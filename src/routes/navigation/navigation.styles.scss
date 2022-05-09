@@ -1,3 +1,8 @@
+$desktop: 1200px;
+$laptop: 1024px;
+$tablet: 920px;
+$phone: 480px;
+
 .navigation-container {
 }
 
@@ -16,49 +21,71 @@
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.nav-left {
-  text-decoration: none;
-  h1 {
-    margin: 0;
-    // color: white;
-    font-family: 'Italiana', serif;
-    font-size: 80px;
-    font-weight: 400;
-    background-image: linear-gradient(135deg,
-      #DDBC9C 50%,
-      #C19D62 90%);
-    color: transparent;
-    -webkit-background-clip:text;
-  }
-  h1:hover {
-    background-image: linear-gradient(135deg,
-        #dbcdbf 50%,
-        #c0aa87 90%);
+@media screen and (min-width: $laptop) {
+  .nav-left {
+    text-decoration: none;
+    h1 {
+      margin: 0;
+      // color: white;
+      font-family: 'Italiana', serif;
+      font-size: 80px;
+      font-weight: 400;
+      background-image: linear-gradient(135deg,
+        #DDBC9C 50%,
+        #C19D62 90%);
+      color: transparent;
+      -webkit-background-clip:text;
+    }
+    h1:hover {
+      background-image: linear-gradient(135deg,
+          #dbcdbf 50%,
+          #c0aa87 90%);
+    }
   }
 }
 
-.nav-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  a {
-    margin: 8px 0px;
-    font-family: 'Italiana',
-    serif;
-    font-size: 30px;
-    font-weight: 400;
-    background-image: linear-gradient(135deg,
-      #DDBC9C 50%,
-      #C19D62 90%);
-    color: transparent;
-    -webkit-background-clip:text;
-  }
-  a:hover {
-    background-image: linear-gradient(135deg,
-        #dbcdbf 50%,
-        #c0aa87 90%);
+@media screen and (max-width: $tablet) {
+  .nav-left {
+    text-decoration: none;
+
+    h1 {
+      margin: 0;
+      // color: white;
+      font-family: 'Italiana', serif;
+      font-size: 40px;
+      font-weight: 400;
+      background-image: linear-gradient(135deg,
+          #DDBC9C 50%,
+          #C19D62 90%);
+      color: transparent;
+      -webkit-background-clip: text;
+    }
   }
 }
+
+// .nav-right {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-end;
+//   a {
+//     margin: 8px 0px;
+//     font-family: 'Italiana',
+//     serif;
+//     font-size: 30px;
+//     font-weight: 400;
+//     background-image: linear-gradient(135deg,
+//       #DDBC9C 50%,
+//       #C19D62 90%);
+//     color: transparent;
+//     -webkit-background-clip:text;
+//   }
+//   a:hover {
+//     background-image: linear-gradient(135deg,
+//         #dbcdbf 50%,
+//         #c0aa87 90%);
+//   }
+// }
