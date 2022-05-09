@@ -1,8 +1,13 @@
 .app-container {
   /* background-color: #212121; */
-  background-color: #04060A;
+  /* background-color: #04060A; */
+  /* background-color: #2a2a2a; */
+  /* background-color: #042A43; */
   /* background-image: linear-gradient(90deg,
     #04060A 30%,
     #432c08a5 50%,
     #04060A 70%); */
+    background-image: linear-gradient(135deg,
+      #163957,
+      #051727);
 }
