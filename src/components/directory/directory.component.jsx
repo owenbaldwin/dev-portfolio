@@ -17,24 +17,30 @@ const categories = [
     },
     {
       id: 3,
+      title: 'CPPC',
+      imageUrl: 'https://i.ibb.co/NKq28Xk/Screenshot-2022-06-14-at-15-01-05.png',
+      route: '/CPPC'
+    },
+    {
+      id: 4,
       title: 'Owen Baldwin - Film Composer',
       imageUrl: 'https://i.ibb.co/r21z6cN/ob-home.png',
       route: '/Music Portfolio'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Watchlist',
       imageUrl: 'https://i.ibb.co/56s28Rr/wl-home.png',
       route: '/Watchlist'
     },
     {
-      id: 5,
+      id: 6,
       title: 'Demo React Shop',
       imageUrl: 'https://i.ibb.co/4pVXb9H/crwn-home.png',
       route: 'Demo React Store'
     },
     {
-      id: 6,
+      id: 7,
       title: 'IsleBnB',
       imageUrl: 'https://i.ibb.co/LnR5nsN/islebnb-landingpage.png',
       route: '/IsleBnB'
