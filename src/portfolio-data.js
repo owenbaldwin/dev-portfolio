@@ -112,6 +112,57 @@ const PORTFOLIO_DATA = [
     ],
   },
   {
+    id: 7,
+    title: 'CPPC',
+    items: [
+      {
+        id: 72,
+        presentation: "This is a website for a packaging company. This is still work in progress. More images to come soon!",
+      },
+      {
+        id: 73,
+        tech: "Built using React, JS, HTML, SCSS, GitHub, Heroku.",
+      },
+      {
+        id: 74,
+        wblink: 'https://cppc-react.herokuapp.com/',
+      },
+      {
+        id: 75,
+        ghlink: 'https://github.com/owenbaldwin/cppc-react',
+      },
+      {
+        id: 76,
+        images: [
+          {
+            id: 77,
+            imageUrl: 'https://i.ibb.co/NKq28Xk/Screenshot-2022-06-14-at-15-01-05.png',
+            imageDescription: 'CPPC landing page',
+          },
+          {
+            id: 78,
+            imageUrl: 'https://i.ibb.co/T2n7Fnc/Screenshot-2022-06-14-at-15-03-05.png',
+            imageDescription: 'Case studies',
+          },
+          {
+            id: 79,
+            imageUrl: 'https://i.ibb.co/j4cBjNC/Screenshot-2022-06-14-at-15-03-27.png',
+            imageDescription: 'Contact popup',
+          },
+          {
+            id: 80,
+            imageUrl: 'https://i.ibb.co/xYXSJK9/Screenshot-2022-06-14-at-15-04-24.png',
+            imageDescription: 'CPPC blog page',
+          },
+        ],
+      },
+      {
+        id: 81,
+        video: '',
+      },
+    ],
+  },
+  {
     id: 3,
     title: 'Music Portfolio',
     items: [
